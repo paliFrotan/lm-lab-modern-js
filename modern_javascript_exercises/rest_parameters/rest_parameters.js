@@ -1,10 +1,14 @@
 // Instructions can be found in rest_parameters.md
 
-function add(a, b) {
-  // Add a loop here
-  return a + b;
+export const add = (...theArgs) =>{
+  let total = 0;
+  for (const arg of theArgs) {
+    total += arg;
+  }
+  return total;
+ // return a + b;
 }
 
-add(1, 2, 3, 4, 5);
+//add(1, 2, 3, 4, 5);
 
-module.exports = add;
+//module.exports = add;
