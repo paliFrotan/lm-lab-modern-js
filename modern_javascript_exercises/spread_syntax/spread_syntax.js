@@ -4,5 +4,6 @@
  */
 
 export function allTheNumbers(numbers, moreNumbers) {
-  return [];
+  //const [...numbers, ...moreNumbers]
+  return [...numbers, ...moreNumbers];
 }
