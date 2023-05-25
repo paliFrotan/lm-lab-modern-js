@@ -7,7 +7,9 @@
 
 //   return first + ", " + second + ", " + third;
 // }
-//people.forEach(person =>console.log("The person is "+person));
 
-export const sequence = order => order[0] + ", " + order[1] + ", " + order[2];
 
+export const sequence = order => {
+    const [first, second, rest] = order;
+    return first + ", " + second + ", " + rest;
+};
